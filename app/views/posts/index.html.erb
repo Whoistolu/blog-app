@@ -1,0 +1,1 @@
+<h1>show the posts of a user</h1>
