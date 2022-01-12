@@ -1,4 +1,4 @@
-# Enumerable
+# Blog
 
 > A blog app
 ## Built With
