@@ -1,0 +1,7 @@
+Started GET "/" for 127.0.0.1 at 2022-01-12 09:41:22 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/whoistolu/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/whoistolu/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 28.9ms | Allocations: 653)
+Completed 200 OK in 94ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 6384)
+
+
