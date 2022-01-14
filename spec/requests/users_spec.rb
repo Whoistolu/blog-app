@@ -5,7 +5,6 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
     it 'should returns http 200 success' do
-      # get '/users/index'
       get users_path
       expect(response).to have_http_status(200)
     end
@@ -25,7 +24,6 @@ RSpec.describe 'Users', type: :request do
     before(:each) { get user_path(32) }
 
     it 'should return correct response' do
-      # get '/users/show'
       expect(response).to have_http_status(200)
     end
 
