@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -29,9 +31,9 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem 'rspec', '~> 3.0'
 gem 'rails-controller-testing'
-gem 'rspec-rails' 
+gem 'rspec', '~> 3.0'
+gem 'rspec-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
