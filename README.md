@@ -1,17 +1,39 @@
-# Blog
+# Blog-App
 
-> A blog app
+> The Blog app will be a classic example of a blog website. You will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+
 ## Built With
 
-- Ruby
+- Ruby on Rails
 
 ## To get a local copy run the following steps:
-- Copy this link [this link]()
+- Copy this link [this link](https://github.com/Whoistolu/blog-app)
 - Open your terminal or command line
-- Run "git clone Paste [this link]()"
+- Run "git clone Paste [this link](https://github.com/Whoistolu/blog-app)"
 - Open the folder with your code editor
 - Create a branch to work on
 - Or open the `` file in the dist directory to start coding
+
+Put
+````
+gem 'rails-controller-testing'
+gem 'rspec-rails'
+````
+in your Gemfile
+
+Run:
+````
+rails generate rspec:install
+````
+
+Run:
+````
+rails generate controller posts index show 
+````
+`````
+rails generate controller users index show 
+`````
+
 
 👤 **Author**
 
@@ -25,7 +47,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Hector096/Enumerable/issues).
+Feel free to check the [issues page](https://github.com/Whoistolu/blog-app/issues).
 
 
 ## Acknowledgements
