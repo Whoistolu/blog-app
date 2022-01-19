@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   has_many :comments
   has_many :likes
-  belongs_to :user
+  belongs_to :author, class_name: 'User'
 
   def recent_5_comments
     comment.order('created_at Desc').limit(5)
