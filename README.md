@@ -14,25 +14,15 @@
 - Create a branch to work on
 - Or open the `` file in the dist directory to start coding
 
-Put
-````
-gem 'rails-controller-testing'
-gem 'rspec-rails'
-````
-in your Gemfile
-
 Run:
 ````
-rails generate rspec:install
+rails db:create
 ````
 
 Run:
 ````
-rails generate controller posts index show 
+rails db:migrate
 ````
-`````
-rails generate controller users index show 
-`````
 
 
 👤 **Author**
