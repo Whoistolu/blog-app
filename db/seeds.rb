@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+User.create(name: "Ben", photo: "url", bio: "Hey my name is ben, I'm dev, Lorem Ipsum is simply dummy text of the printing and typesetting industry.  It has survived not only five centuries, but also the leap into electronic typesetting", posts_counter: 5)
+User.create(name: "Taliah", photo: "url", bio: "Hey my name is Taliah, I'm teacher, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting", posts_counter: 0)
+User.create(name: "Omar", photo: "url", bio: "Hey my name is Omar, I'm astronaut, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting", posts_counter: 3)
+User.create(name: "Deen", photo: "url", bio: "Hey my name is Deen, I'm unemplyed, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting", posts_counter: 5)

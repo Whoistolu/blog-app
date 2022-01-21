@@ -1,1 +1,11 @@
-<h1>list of users is here</h1>
+<% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<%end%>
