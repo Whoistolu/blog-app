@@ -1998,3 +1998,1099 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 108ms (Views: 79.7ms | ActiveRecord: 4.5ms | Allocations: 52335)
 
 
+Started GET "/users/8" for 127.0.0.1 at 2022-01-21 16:24:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3477)
+Completed 200 OK in 44ms (Views: 5.2ms | ActiveRecord: 6.9ms | Allocations: 10227)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:09:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 355.1ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 609.1ms | Allocations: 3266)
+Completed 200 OK in 1426ms (Views: 609.8ms | ActiveRecord: 536.2ms | Allocations: 6277)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:09:35 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 3273)
+Completed 200 OK in 66ms (Views: 52.9ms | ActiveRecord: 0.3ms | Allocations: 4015)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:09:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 3258)
+Completed 200 OK in 75ms (Views: 59.5ms | ActiveRecord: 0.2ms | Allocations: 3984)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:11:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 268.4ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 434.7ms | Allocations: 3271)
+Completed 200 OK in 621ms (Views: 436.4ms | ActiveRecord: 0.8ms | Allocations: 3997)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2022-01-21 19:11:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 3270)
+Completed 200 OK in 142ms (Views: 95.3ms | ActiveRecord: 1.1ms | Allocations: 3993)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:11:24 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 77.7ms | Allocations: 3294)
+Completed 200 OK in 87ms (Views: 79.2ms | ActiveRecord: 0.9ms | Allocations: 4018)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:14:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 18.6ms | Allocations: 768)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 3710)
+Completed 200 OK in 105ms (Views: 100.8ms | ActiveRecord: 0.3ms | Allocations: 5082)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:14:31 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 753)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 3705)
+Completed 200 OK in 85ms (Views: 64.6ms | ActiveRecord: 0.7ms | Allocations: 5076)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:18:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 964.0ms | Allocations: 8067)
+  Rendered layout layouts/application.html.erb (Duration: 965.6ms | Allocations: 8141)
+Completed 500 Internal Server Error in 1016ms (ActiveRecord: 0.7ms | Allocations: 9493)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x0000000000cfd0>
+Did you mean?  @user):
+    3:     <%= image_tag("image1.jpg", width:'100vw') %>
+    4:   </div>
+    5:   <div class="user_data">
+    6:     <h2><a href= '/users/<%=user.id%>'><%= @user.name%></h2>
+    7:     <p><a href= '/users/<%=user.id%>'>Number of posts: <%= @user.posts_counter%></p>
+    8:   </div>
+    9: </div>
+  
+app/views/users/show.html.erb:6
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:00 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 84.5ms | Allocations: 802)
+  Rendered layout layouts/application.html.erb (Duration: 221.7ms | Allocations: 3761)
+Completed 200 OK in 280ms (Views: 257.2ms | ActiveRecord: 0.6ms | Allocations: 5133)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3278)
+Completed 200 OK in 58ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 4021)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 3274)
+Completed 200 OK in 102ms (Views: 47.8ms | ActiveRecord: 0.2ms | Allocations: 4000)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 3267)
+Completed 200 OK in 50ms (Views: 31.7ms | ActiveRecord: 0.2ms | Allocations: 3993)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1213)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1288)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 2636)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%= @user.bio%>'><%= @user.name%></h2>
+    <p><a href= '/users/<%= @user.%>'>Number of posts: <%= @user.posts_counter%></p>
+  </div>
+</div>
+
+<div class="user_container2">
+  <div class="user_data">
+    <h2>Bio</h2>
+    <p><%= @user.bio%></p>
+  </div>
+</div>
+
+):
+1:    <div class="user_container">
+2:      <div class="user_img">
+3:        <%= image_tag("image1.jpg", width:'100vw') %>
+4:      </div>
+5:      <div class="user_data">
+6:        <h2><a href= '/users/<%= @user.bio%>'><%= @user.name%></h2>
+7:        <p><a href= '/users/<%= @user.%>'>Number of posts: <%= @user.posts_counter%></p>
+8:      </div>
+9:    </div>
+10:    
+11:    <div class="user_container2">
+12:      <div class="user_data">
+13:        <h2>Bio</h2>
+14:        <p><%= @user.bio%></p>
+15:      </div>
+16:    </div>
+  
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:19:53 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1201)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1276)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 1975)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%= @user.bio%>'><%= @user.name%></h2>
+    <p><a href= '/users/<%= @user.%>'>Number of posts: <%= @user.posts_counter%></p>
+  </div>
+</div>
+
+<div class="user_container2">
+  <div class="user_data">
+    <h2>Bio</h2>
+    <p><%= @user.bio%></p>
+  </div>
+</div>
+
+):
+1:    <div class="user_container">
+2:      <div class="user_img">
+3:        <%= image_tag("image1.jpg", width:'100vw') %>
+4:      </div>
+5:      <div class="user_data">
+6:        <h2><a href= '/users/<%= @user.bio%>'><%= @user.name%></h2>
+7:        <p><a href= '/users/<%= @user.%>'>Number of posts: <%= @user.posts_counter%></p>
+8:      </div>
+9:    </div>
+10:    
+11:    <div class="user_container2">
+12:      <div class="user_data">
+13:        <h2>Bio</h2>
+14:        <p><%= @user.bio%></p>
+15:      </div>
+16:    </div>
+  
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:20:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1214)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1289)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.7ms | Allocations: 2641)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.bio%>'><%= @user.name%></h2>
+    <p><a href= '/users/<%=user.%>'>Number of posts: <%= @user.posts_counter%></p>
+  </div>
+</div>
+
+<div class="user_container2">
+  <div class="user_data">
+    <h2>Bio</h2>
+    <p><%= @user.bio%></p>
+  </div>
+</div>
+
+):
+1:    <div class="user_container">
+2:      <div class="user_img">
+3:        <%= image_tag("image1.jpg", width:'100vw') %>
+4:      </div>
+5:      <div class="user_data">
+6:        <h2><a href= '/users/<%=user.bio%>'><%= @user.name%></h2>
+7:        <p><a href= '/users/<%=user.%>'>Number of posts: <%= @user.posts_counter%></p>
+8:      </div>
+9:    </div>
+10:    
+11:    <div class="user_container2">
+12:      <div class="user_data">
+13:        <h2>Bio</h2>
+14:        <p><%= @user.bio%></p>
+15:      </div>
+16:    </div>
+  
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:20:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1207)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1282)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 1981)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.bio%>'><%= @user.name%></h2>
+    <p><a href= '/users/<%=user.%>'>Number of posts: <%= @user.posts_counter%></p>
+  </div>
+</div>
+
+<div class="user_container2">
+  <div class="user_data">
+    <h2>Bio</h2>
+    <p><%= @user.bio%></p>
+  </div>
+</div>
+
+):
+1:    <div class="user_container">
+2:      <div class="user_img">
+3:        <%= image_tag("image1.jpg", width:'100vw') %>
+4:      </div>
+5:      <div class="user_data">
+6:        <h2><a href= '/users/<%=user.bio%>'><%= @user.name%></h2>
+7:        <p><a href= '/users/<%=user.%>'>Number of posts: <%= @user.posts_counter%></p>
+8:      </div>
+9:    </div>
+10:    
+11:    <div class="user_container2">
+12:      <div class="user_data">
+13:        <h2>Bio</h2>
+14:        <p><%= @user.bio%></p>
+15:      </div>
+16:    </div>
+  
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+app/views/users/show.html.erb:7: syntax error, unexpected ')'
+app/views/users/show.html.erb:19: syntax error, unexpected `end', expecting ')'
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:20:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 16.6ms | Allocations: 5152)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5226)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms | Allocations: 6572)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x0000000000e240>
+Did you mean?  @user):
+    3:     <%= image_tag("image1.jpg", width:'100vw') %>
+    4:   </div>
+    5:   <div class="user_data">
+    6:     <h2><a href= '/users/<%=user.bio%>'><%= @user.name%></h2>
+    7:     <p><a href= '/users/<%=user.bio%>'>Number of posts: <%= @user.posts_counter%></p>
+    8:   </div>
+    9: </div>
+  
+app/views/users/show.html.erb:6
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:28:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3723)
+Completed 200 OK in 106ms (Views: 20.3ms | ActiveRecord: 25.3ms | Allocations: 7419)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-21 19:28:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3260)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.8ms | Allocations: 3984)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 19:28:46 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4130)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 6870)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.6ms | Allocations: 7184)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:28:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 563)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3273)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 4001)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:29:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3259)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.5ms | Allocations: 3985)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 19:48:24 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (31.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 587.9ms | Allocations: 6146)
+  Rendered layout layouts/application.html.erb (Duration: 751.9ms | Allocations: 8855)
+Completed 200 OK in 754ms (Views: 753.0ms | ActiveRecord: 376.6ms | Allocations: 9117)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 19:49:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 560)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3255)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.9ms | Allocations: 4014)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (16.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (926.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Project_development"[0m
+  [1m[35m (943.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Project_test"[0m
+  [1m[35m (4518.8ms)[0m  [1m[35mCREATE DATABASE "Project_development" ENCODING = 'unicode'[0m
+  [1m[35m (2800.6ms)[0m  [1m[35mCREATE DATABASE "Project_test" ENCODING = 'unicode'[0m
+  [1m[35m (372.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (174.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1605976831841687025)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20220114181226)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (155.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "photo" character varying, "bio" text, "posts_counter" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114181226"]]
+  [1m[36mTRANSACTION (14.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePosts (20220114181854)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (306.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "text" text, "comments_counter" integer, "likes_counter" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114181854"]]
+  [1m[36mTRANSACTION (17.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLikes (20220114223309)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (110.9ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114223309"]]
+  [1m[36mTRANSACTION (24.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20220114223514)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (196.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "text" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114223514"]]
+  [1m[36mTRANSACTION (23.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersRefToComments (20220114224046)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.4ms)[0m  [1m[35mALTER TABLE "comments" ADD "user_id" bigint NOT NULL[0m
+  [1m[35m (96.4ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (102.0ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114224046"]]
+  [1m[36mTRANSACTION (31.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPostsRefToComments (20220114224208)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "comments" ADD "post_id" bigint NOT NULL[0m
+  [1m[35m (97.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114224208"]]
+  [1m[36mTRANSACTION (20.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersRefToLikes (20220114224301)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "likes" ADD "user_id" bigint NOT NULL[0m
+  [1m[35m (55.6ms)[0m  [1m[35mCREATE INDEX "index_likes_on_user_id" ON "likes" ("user_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "likes" ADD CONSTRAINT "fk_rails_1e09b5dabf"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114224301"]]
+  [1m[36mTRANSACTION (20.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPostsRefToLikes (20220114224349)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "likes" ADD "post_id" bigint NOT NULL[0m
+  [1m[35m (64.8ms)[0m  [1m[35mCREATE INDEX "index_likes_on_post_id" ON "likes" ("post_id")[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "likes" ADD CONSTRAINT "fk_rails_87a8aac469"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114224349"]]
+  [1m[36mTRANSACTION (24.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUsersRefToPosts (20220114224658)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "user_id" bigint NOT NULL[0m
+  [1m[35m (84.7ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220114224658"]]
+  [1m[36mTRANSACTION (18.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-21 19:19:40.749705"], ["updated_at", "2022-01-21 19:19:40.749705"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(1605976831841687025)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ben"], ["photo", "url"], ["bio", "Hey my name is ben, I'm dev, Lorem Ipsum is simply dummy text of the printing and typesetting industry.  It has survived not only five centuries, but also the leap into electronic typesetting"], ["posts_counter", 5], ["created_at", "2022-01-21 19:20:49.287083"], ["updated_at", "2022-01-21 19:20:49.287083"]]
+  [1m[36mTRANSACTION (21.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taliah"], ["photo", "url"], ["bio", "Hey my name is Taliah, I'm teacher, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting"], ["posts_counter", 0], ["created_at", "2022-01-21 19:21:00.386824"], ["updated_at", "2022-01-21 19:21:00.386824"]]
+  [1m[36mTRANSACTION (25.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Omar"], ["photo", "url"], ["bio", "Hey my name is Omar, I'm astronaut, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting"], ["posts_counter", 3], ["created_at", "2022-01-21 19:21:12.877034"], ["updated_at", "2022-01-21 19:21:12.877034"]]
+  [1m[36mTRANSACTION (23.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Deen"], ["photo", "url"], ["bio", "Hey my name is Deen, I'm unemplyed, Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting"], ["posts_counter", 5], ["created_at", "2022-01-21 19:21:23.169799"], ["updated_at", "2022-01-21 19:21:23.169799"]]
+  [1m[36mTRANSACTION (18.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:23:26 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 37.7ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 1272)
+Completed 500 Internal Server Error in 70ms (Allocations: 5081)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<%= render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+9:      </div>
+10:    </div>
+11:    <%= render :partial => 'partials/user', locals: {user : user} %>
+12:    <%end%>
+  
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:25:57 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1221)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1296)
+Completed 500 Internal Server Error in 10ms (Allocations: 2184)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<% render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+9:      </div>
+10:    </div>
+11:    <% render :partial => 'partials/user', locals: {user : user} %>
+12:    <%end%>
+  
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:26:38 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1126)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1201)
+Completed 500 Internal Server Error in 16ms (Allocations: 2088)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<%= render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <%= render :partial => 'partials/user', locals: {user : user} %>
+3:    <%end%>
+  
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:2: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:3: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected `end', expecting ')'
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:28:10 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 4341)
+  Rendered layout layouts/application.html.erb (Duration: 712.0ms | Allocations: 18793)
+Completed 200 OK in 718ms (Views: 715.1ms | ActiveRecord: 13.3ms | Allocations: 19704)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:30:11 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 41.1ms | Allocations: 3225)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 3299)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.8ms | Allocations: 4187)
+
+
+  
+ActionView::Template::Error (Missing partial partials/_image_and_user with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/whoistolu/Documents/PowerHouse/blog-app/app/views"
+  * "/home/whoistolu/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/home/whoistolu/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  partials/user
+               action_text/attachment_galleries/attachment_gallery
+               action_text/attachables/missing_attachable
+               action_text/attachables/remote_image
+               active_storage/blobs/blob
+               action_text/contents/content):
+    3: <% @users.each do |user| %>
+    4: <%= link_to user_path(user.id) do %>
+    5: <li class="user">
+    6: <%= render :partial => 'partials/image_and_user', locals: { user: user } %>
+    7: </li>
+    8: <% end %>
+    9: <% end %>
+  
+app/views/users/index.html.erb:6
+app/views/users/index.html.erb:4
+app/views/users/index.html.erb:3
+Started GET "/users/" for 127.0.0.1 at 2022-01-21 20:30:51 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered partials/_user.html.erb (Duration: 30.0ms | Allocations: 773)
+  Rendered partials/_user.html.erb (Duration: 1.6ms | Allocations: 254)
+  Rendered partials/_user.html.erb (Duration: 0.6ms | Allocations: 254)
+  Rendered partials/_user.html.erb (Duration: 1.0ms | Allocations: 254)
+  Rendered users/index.html.erb within layouts/application (Duration: 49.8ms | Allocations: 2734)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 5701)
+Completed 200 OK in 69ms (Views: 64.8ms | ActiveRecord: 0.6ms | Allocations: 6611)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-21 22:24:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (62.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 24.2ms | Allocations: 2100)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 2178)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 0.0ms | Allocations: 10688)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<%= render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+9:      </div>
+10:    </div>
+11:    <%= render :partial => 'partials/user', locals: {user : user} %>
+12:    <%end%>
+  
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-01-21 22:44:05 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1217)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1293)
+Completed 500 Internal Server Error in 2ms (Allocations: 1541)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<%= render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+9:      </div>
+10:    </div>
+11:    <%= render :partial => 'partials/user', locals: {user : user} %>
+12:    <%end%>
+  
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-01-21 22:44:33 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1291)
+Completed 500 Internal Server Error in 10ms (Allocations: 1530)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+  </div>
+</div>
+<%= render :partial => 'partials/user', locals: {user : user} %>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href= '/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href= '/users/<%=user.id%>'><%= user.bio%></a></p>
+9:      </div>
+10:    </div>
+11:    <%= render :partial => 'partials/user', locals: {user : user} %>
+12:    <%end%>
+  
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected ':', expecting =>
+app/views/users/index.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:14: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-01-21 22:48:39 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (115.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 1030.6ms | Allocations: 31766)
+  Rendered layout layouts/application.html.erb (Duration: 1207.5ms | Allocations: 46172)
+Completed 200 OK in 1210ms (Views: 1209.3ms | ActiveRecord: 452.7ms | Allocations: 47091)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-21 23:02:52 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 1209)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 1285)
+Completed 500 Internal Server Error in 26ms (Allocations: 2182)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @users.each do |user| %>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw, height:'100%') %>
+  </div>
+  <div class="user_data">
+    <h2><a href='/users/<%=user.id%>'><%= user.name%></a></h2>
+    <p><a href="/users/<%=user.id%>/posts/"> Number of posts: <%= user.posts_counter %></a></p>
+  </div>
+</div>
+<%end%>
+
+):
+1:    <% @users.each do |user| %>
+2:    <div class="user_container">
+3:      <div class="user_img">
+4:        <%= image_tag("image1.jpg", width:'100vw, height:'100%') %>
+5:      </div>
+6:      <div class="user_data">
+7:        <h2><a href='/users/<%=user.id%>'><%= user.name%></a></h2>
+8:        <p><a href="/users/<%=user.id%>/posts/"> Number of posts: <%= user.posts_counter %></a></p>
+9:      </div>
+10:    </div>
+11:    <%end%>
+  
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:4: syntax error, unexpected integer literal, expecting ')'
+app/views/users/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/users/index.html.erb:7: unknown regexp option - r
+app/views/users/index.html.erb:7: syntax error, unexpected backslash, expecting ')'
+app/views/users/index.html.erb:11: syntax error, unexpected `end', expecting ')'
+app/views/users/index.html.erb:13: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-01-21 23:03:48 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 34.0ms | Allocations: 4396)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 7388)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 6.2ms | Allocations: 8308)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-21 23:12:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (30.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 758)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3469)
+Completed 200 OK in 630ms (Views: 5.6ms | ActiveRecord: 45.4ms | Allocations: 10161)
+
+
