@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
-  belongs_to  :author, class_name: 'User'
-  belongs_to  :post
+  belongs_to :author, class_name: 'User'
+  belongs_to :post
 
-  after_save  :update_likes_counter
+  after_save :update_likes_counter
 
   private
 
