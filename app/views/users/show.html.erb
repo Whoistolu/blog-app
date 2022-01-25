@@ -14,3 +14,18 @@
     <p><%= @user.bio%></p>
   </div>
 </div>
+
+<% @user.recent_3_posts.each do |post| %>
+  <div class="user_container">
+      <h2><%= post.title%></h2>
+      <p><%= post.text%></p>
+      <h3>Comment <%= post.comments_counter%></h3>
+      <h4> Likes<%= post.likes_counter%></h4>
+  </div>
+<%end%>
+
+<div>
+<a>
+    <%= link_to "See all posts", user_posts_path(@user) %>
+</a>
+</div>

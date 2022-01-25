@@ -4,8 +4,10 @@
       <%= image_tag("image1.jpg", width:'100vw', height:'100%') %>
     </div>
     <div class="user_data">
-      <h2><a href='/users/<%=user.id%>'><%= user.name%></a></h2>
-      <p><a href="/users/<%=user.id%>/posts/"> Number of posts: <%= user.posts_counter %></a></p>
+      <%= link_to user_path(user.id) do %>
+      <h2><%= user.name%></h2>
+      <p>Number of posts: <%= user.posts_counter %></p>
+      <% end %>
     </div>
   </div>
 <%end%>
