@@ -9,18 +9,17 @@
 </div>
 
 <div class="user_container2">
-  <div class="user_data">
+  <div class="user_data2">
     <h2>Bio</h2>
-    <p><%= @user.bio%></p>
+    <p class="bio"><%= @user.bio%></p>
   </div>
 </div>
 
 <% @user.recent_3_posts.each do |post| %>
-  <div class="user_container">
+  <div class="comment_container">
       <h2><%= post.title%></h2>
       <p><%= post.text%></p>
-      <h3>Comment <%= post.comments_counter%></h3>
-      <h4> Likes<%= post.likes_counter%></h4>
+      <h3>Comment <%= post.comments_counter  %><span>Likes<%= post.likes_counter%></span></h3>
   </div>
 <%end%>
 

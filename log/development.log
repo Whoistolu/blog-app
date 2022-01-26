@@ -3835,3 +3835,1376 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 4711)
 
 
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 08:46:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 418.1ms | Allocations: 1254)
+  Rendered layout layouts/application.html.erb (Duration: 607.2ms | Allocations: 3970)
+Completed 200 OK in 1721ms (Views: 607.7ms | ActiveRecord: 551.3ms | Allocations: 7000)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:48:20 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 108.2ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 6604.9ms | Allocations: 13616)
+Completed 200 OK in 6609ms (Views: 6606.1ms | ActiveRecord: 1.0ms | Allocations: 13878)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:49:37 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 56.5ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 402.8ms | Allocations: 9219)
+Completed 200 OK in 407ms (Views: 403.6ms | ActiveRecord: 1.2ms | Allocations: 9481)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:49:50 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 163.6ms | Allocations: 9238)
+Completed 200 OK in 167ms (Views: 164.6ms | ActiveRecord: 1.3ms | Allocations: 9500)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:50:10 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 73.9ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 201.3ms | Allocations: 8793)
+Completed 200 OK in 220ms (Views: 203.2ms | ActiveRecord: 0.9ms | Allocations: 9055)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2022-01-26 08:50:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (28.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 20.3ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 3934)
+Completed 200 OK in 124ms (Views: 35.5ms | ActiveRecord: 29.3ms | Allocations: 4661)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:52:00 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 24.0ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 265.2ms | Allocations: 10580)
+Completed 200 OK in 269ms (Views: 256.5ms | ActiveRecord: 10.6ms | Allocations: 10842)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:52:28 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 9235)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 1.5ms | Allocations: 9497)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:52:32 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 4682)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.9ms | Allocations: 4944)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:52:42 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 9232)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.9ms | Allocations: 9494)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:55:08 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1977)
+  Rendered layout layouts/application.html.erb (Duration: 132.0ms | Allocations: 11072)
+Completed 200 OK in 136ms (Views: 132.8ms | ActiveRecord: 1.2ms | Allocations: 11334)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:55:11 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 4672)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 2.2ms | Allocations: 4934)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 08:55:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (45.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3943)
+Completed 200 OK in 85ms (Views: 12.4ms | ActiveRecord: 46.3ms | Allocations: 4669)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-01-26 08:56:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3946)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 4672)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2022-01-26 08:56:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 3938)
+Completed 200 OK in 42ms (Views: 35.3ms | ActiveRecord: 1.5ms | Allocations: 4664)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 08:59:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 8021)
+Completed 200 OK in 70ms (Views: 64.0ms | ActiveRecord: 2.5ms | Allocations: 8747)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 08:59:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4014)
+Completed 200 OK in 32ms (Views: 25.2ms | ActiveRecord: 1.5ms | Allocations: 4738)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 08:59:18 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 4728)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 1.0ms | Allocations: 4993)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-26 09:39:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (111.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (167.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 709.7ms | Allocations: 38517)
+  Rendered layout layouts/application.html.erb (Duration: 781.7ms | Allocations: 52965)
+Completed 200 OK in 1742ms (Views: 677.3ms | ActiveRecord: 214.6ms | Allocations: 61503)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-26 09:39:13 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4741)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 5013)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 09:59:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (45.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 247.6ms | Allocations: 9366)
+  Rendered layout layouts/application.html.erb (Duration: 255.4ms | Allocations: 12125)
+Completed 200 OK in 443ms (Views: 172.3ms | ActiveRecord: 131.3ms | Allocations: 18874)
+
+
+Started GET "/users/1/posts" for 127.0.0.1 at 2022-01-26 10:00:17 +0100
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 2980)
+Completed 200 OK in 79ms (Views: 72.7ms | ActiveRecord: 1.1ms | Allocations: 4216)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:04:24 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 87.6ms | Allocations: 9023)
+Completed 200 OK in 101ms (Views: 89.9ms | ActiveRecord: 2.0ms | Allocations: 9763)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:05:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 9948)
+Completed 200 OK in 61ms (Views: 52.4ms | ActiveRecord: 2.4ms | Allocations: 10671)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:06:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 50.3ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 4668)
+Completed 200 OK in 86ms (Views: 75.2ms | ActiveRecord: 2.0ms | Allocations: 5391)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:07:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1577)
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 11034)
+Completed 200 OK in 92ms (Views: 85.3ms | ActiveRecord: 1.6ms | Allocations: 12407)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:09:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 9970)
+Completed 200 OK in 40ms (Views: 32.5ms | ActiveRecord: 2.1ms | Allocations: 10694)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:09:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 9066)
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 1.0ms | Allocations: 9789)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:09:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (3.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 9070)
+Completed 200 OK in 65ms (Views: 53.7ms | ActiveRecord: 4.4ms | Allocations: 9793)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:10:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 8581)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.7ms | Allocations: 9304)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:12:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 77.6ms | Allocations: 10427)
+Completed 200 OK in 88ms (Views: 78.4ms | ActiveRecord: 1.9ms | Allocations: 11150)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:12:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 10405)
+Completed 200 OK in 78ms (Views: 65.4ms | ActiveRecord: 3.1ms | Allocations: 11128)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:13:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 9080)
+Completed 200 OK in 86ms (Views: 75.5ms | ActiveRecord: 2.2ms | Allocations: 9803)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:16:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 62.4ms | Allocations: 9493)
+Completed 200 OK in 72ms (Views: 64.2ms | ActiveRecord: 1.6ms | Allocations: 10216)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:17:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 10918)
+Completed 200 OK in 31ms (Views: 25.7ms | ActiveRecord: 1.0ms | Allocations: 11641)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:17:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 9525)
+Completed 200 OK in 72ms (Views: 63.6ms | ActiveRecord: 1.8ms | Allocations: 10248)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 10:18:02 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 2218)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 4990)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 1.7ms | Allocations: 5304)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 10:18:42 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 11172)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 1.1ms | Allocations: 11435)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 10:19:25 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 10222)
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 0.8ms | Allocations: 10484)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:19:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4005)
+Completed 200 OK in 24ms (Views: 17.3ms | ActiveRecord: 0.8ms | Allocations: 4731)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:21:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10440)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 1.2ms | Allocations: 11163)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:22:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1247)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 10432)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 11155)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:22:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 9998)
+Completed 200 OK in 42ms (Views: 35.9ms | ActiveRecord: 1.2ms | Allocations: 10721)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:26:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1575)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 10537)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.6ms | Allocations: 11908)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:26:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8604)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 1.2ms | Allocations: 9328)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:26:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10005)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.7ms | Allocations: 10728)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:26:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 9045)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.9ms | Allocations: 9768)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:28:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 9999)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.6ms | Allocations: 10722)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:28:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 9545)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.8ms | Allocations: 10268)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:28:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 10018)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.7ms | Allocations: 10742)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:29:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4038)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.7ms | Allocations: 4761)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 10:29:33 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2217)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 4999)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 5316)
+
+
+Started GET "/users/" for 127.0.0.1 at 2022-01-26 10:31:09 +0100
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2216)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 12159)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 13069)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:31:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1570)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4341)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.7ms | Allocations: 5120)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:31:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 10519)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.7ms | Allocations: 11243)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:32:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 9976)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.7ms | Allocations: 10699)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:32:35 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 213.4ms | Allocations: 9560)
+Completed 200 OK in 218ms (Views: 214.2ms | ActiveRecord: 0.8ms | Allocations: 10283)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:33:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 9595)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.6ms | Allocations: 10318)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:33:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 9598)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.7ms | Allocations: 10322)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:34:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10414)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.7ms | Allocations: 11137)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:34:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 9572)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.8ms | Allocations: 10295)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:34:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10007)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.7ms | Allocations: 10730)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:34:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 9106)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 1.2ms | Allocations: 9829)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:34:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 10450)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.9ms | Allocations: 11173)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:35:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 9542)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 10265)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:36:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 9092)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.8ms | Allocations: 9815)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:37:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 9557)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.6ms | Allocations: 10280)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:37:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 11384)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.7ms | Allocations: 12107)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:37:21 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 10493)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 1.0ms | Allocations: 11216)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:38:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 9096)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.7ms | Allocations: 9819)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:38:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4028)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 1.0ms | Allocations: 4751)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:38:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 9543)
+Completed 200 OK in 52ms (Views: 44.5ms | ActiveRecord: 1.6ms | Allocations: 10266)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:39:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9554)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.8ms | Allocations: 10277)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:39:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 10046)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.6ms | Allocations: 10769)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:40:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 10068)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.7ms | Allocations: 10791)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:43:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 8656)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 9379)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:43:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4006)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 4729)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:43:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3989)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 1.1ms | Allocations: 4712)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:43:51 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 9119)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.6ms | Allocations: 9842)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:46:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1576)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4571)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.7ms | Allocations: 5942)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:46:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1570)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4561)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.7ms | Allocations: 5932)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:47:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1569)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4570)
+Completed 200 OK in 25ms (Views: 18.9ms | ActiveRecord: 0.7ms | Allocations: 5941)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:48:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 10081)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.7ms | Allocations: 10805)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:49:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1247)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 10469)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.7ms | Allocations: 11192)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:49:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 10927)
+Completed 200 OK in 73ms (Views: 62.1ms | ActiveRecord: 1.5ms | Allocations: 11650)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:50:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10494)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.7ms | Allocations: 11217)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:51:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 9578)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 10301)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:51:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 10494)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 11217)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:52:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 9573)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.6ms | Allocations: 10296)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:52:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 10050)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.7ms | Allocations: 10773)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:52:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 10555)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.8ms | Allocations: 11279)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:52:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 11433)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.7ms | Allocations: 12156)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:53:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 11406)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 0.7ms | Allocations: 12129)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:53:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 10523)
+Completed 200 OK in 69ms (Views: 60.9ms | ActiveRecord: 1.7ms | Allocations: 11246)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:54:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 10928)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.6ms | Allocations: 11651)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:54:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4030)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.7ms | Allocations: 4753)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:54:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 9571)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.7ms | Allocations: 10294)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:54:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 10069)
+Completed 200 OK in 57ms (Views: 50.3ms | ActiveRecord: 1.6ms | Allocations: 10792)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:55:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4052)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.7ms | Allocations: 4775)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:55:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 10508)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.8ms | Allocations: 11231)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:55:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 9983)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.8ms | Allocations: 10706)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-26 10:55:57 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 10980)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.7ms | Allocations: 11703)
+
+
