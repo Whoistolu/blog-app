@@ -10,7 +10,7 @@
     <div class="user_data_post">
      <%= link_to "#{post.title}", user_post_path(@user.id, post.id), class:"anything" %> 
       <h3><%= post.text%></h3>
-      <p>Number of comments: <%= post.comments_counter %><span>Number of likes: <%= post.likes_counter %></span></p>
+      <p>Number of comments: <%= post.comments_counter %> <span>Number of likes: <%= post.likes_counter %></span></p>
     </div>
   </div>
   <div class="comments">
