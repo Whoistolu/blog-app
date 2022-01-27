@@ -1,1 +1,27 @@
-<h1>show the posts of a user</h1>
+  <div class="user_container">
+    <div class="user_data">
+      <h2><%= @user.name%></h2>
+      <p>Number of posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+
+<% @posts.each do |post| %>
+  <div class="user_container">
+    <div class="user_data_post">
+     <%= link_to "#{post.title}", user_post_path(@user.id, post.id), class:"anything" %> 
+      <h3><%= post.text%></h3>
+      <p>Number of comments: <%= post.comments_counter %> <span>Number of likes: <%= post.likes_counter %></span></p>
+    </div>
+  </div>
+  <div class="comments">
+    <% post.recent_5_comments.each do |comment| %>
+       <h2><%= comment.user.name%>: <%= comment.text%></h2>
+    <%end%>
+  </div>
+<%end%>
+
+<div class="button-wrapper">
+  <button class="button">
+      Pagination
+  </button>
+</div>
