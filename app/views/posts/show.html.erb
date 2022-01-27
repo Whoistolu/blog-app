@@ -1,1 +1,14 @@
-<h1>show posts details</h1>
+
+  <div class="user_container">
+    <div class="user_data_post"> 
+      <h2><%= @post.title %>by <span><%= @post.user.name %></span></h2>
+      <h3>Comment <%= @post.comments_counter%>,  <span>Likes <%= @post.likes_counter%></span></h3>
+    </div>
+  </div>
+  <div>
+    <div class="comments">
+    <% @comments.each do |comment| %>
+       <h2><%= comment.user.name%>: <%= comment.text%></h2>
+    <%end%>
+  </div>
+  </div>

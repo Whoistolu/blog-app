@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 }
 
 .user_container {
@@ -31,7 +31,7 @@ body {
 }
 
 .comment_container h2 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .comment_container p {
@@ -68,22 +68,38 @@ body {
 }
 
 .user_data h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .user_data2 h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .user_data p {
   margin: 0;
   font-size: 30px;
-  /* justify-content: flex-end; */
 }
 
 .user_data2 p {
   margin: 0;
   font-size: 30px;
-  /* justify-content: flex-end; */
 }
 
+.button-wrapper {
+  width: 100%;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+}
+
+.button {
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.button_class {
+  text-decoration: none;
+  color: red;
+}
