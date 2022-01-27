@@ -1,1 +1,30 @@
-<h1>Show the user details by ID</h1>
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
+  <div class="user_data">
+    <h2><%= @user.name%></h2>
+    <p>Number of posts: <%= @user.posts_counter%></p>
+  </div>
+</div>
+
+<div class="user_container2">
+  <div class="user_data2">
+    <h2>Bio</h2>
+    <p class="bio"><%= @user.bio%></p>
+  </div>
+</div>
+
+<% @user.recent_3_posts.each do |post| %>
+  <div class="comment_container">
+      <h2><%= post.title%></h2>
+      <p><%= post.text%></p>
+      <h3>Comment <%= post.comments_counter%>,  <span>Likes <%= post.likes_counter%></span></h3>
+  </div>
+<%end%>
+
+<div class="button-wrapper">
+  <button class="button">
+      <%= link_to "See all posts", user_posts_path(@user), {:class => "button_class"} %>
+  </button>
+</div>

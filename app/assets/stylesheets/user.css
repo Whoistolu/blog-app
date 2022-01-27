@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.user_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.user_container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.comment_container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid blue;
+  width: 82%;
+  height: 240px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 38px;
+  padding-right: 38px;
+  border-radius: 8px;
+  margin: 15px auto;
+}
+
+.comment_container h2 {
+  font-size: 35px;
+}
+
+.comment_container p {
+  font-size: 22px;
+}
+
+.comment_container h3 {
+  align-self: flex-end;
+  font-size: 25px;
+}
+
+.user_data {
+  display: flex;
+  width: 72%;
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 4%;
+  border: 5px solid blue;
+  border-radius: 8px;
+}
+
+.user_data2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 38px;
+  padding-right: 38px;
+  width: 82%;
+  height: 240px;
+  border: 5px solid blue;
+  border-radius: 8px;
+}
+
+.user_data h2 {
+  font-size: 35px;
+}
+
+.user_data2 h2 {
+  font-size: 35px;
+}
+
+.user_data p {
+  margin: 0;
+  font-size: 30px;
+}
+
+.user_data2 p {
+  margin: 0;
+  font-size: 30px;
+}
+
+.button-wrapper {
+  width: 100%;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+}
+
+.button {
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.button_class {
+  text-decoration: none;
+  color: red;
+}
