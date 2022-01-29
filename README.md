@@ -16,6 +16,11 @@
 
 Run:
 ````
+rails s
+````
+
+Run:
+````
 rspec
 ````
 
