@@ -17304,3 +17304,152 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 44ms (Views: 20.7ms | ActiveRecord: 0.9ms | Allocations: 7935)
 
 
+Started GET "/" for 127.0.0.1 at 2022-01-29 16:24:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (53.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (107.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:1
+  Rendered users/index.html.erb within layouts/application (Duration: 1071.8ms | Allocations: 28173)
+  Rendered layout layouts/application.html.erb (Duration: 1279.4ms | Allocations: 42685)
+Completed 200 OK in 1559ms (Views: 1172.6ms | ActiveRecord: 140.9ms | Allocations: 51222)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-01-29 16:24:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (31.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/models/user.rb:7:in `recent_3_posts'
+  Rendered users/show.html.erb within layouts/application (Duration: 91.1ms | Allocations: 9248)
+  Rendered layout layouts/application.html.erb (Duration: 96.0ms | Allocations: 12050)
+Completed 200 OK in 161ms (Views: 63.2ms | ActiveRecord: 35.1ms | Allocations: 14519)
+
+
+Started GET "/users/1/posts" for 127.0.0.1 at 2022-01-29 16:24:45 +0100
+  
+NoMethodError (undefined method `respond_to' for PostsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/posts_controller.rb:17:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/users/1/posts/new" for 127.0.0.1 at 2022-01-29 16:25:02 +0100
+  
+NoMethodError (undefined method `respond_to' for PostsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/posts_controller.rb:17:in `<class:PostsController>'
+app/controllers/posts_controller.rb:1:in `<main>'
+Started GET "/users/1/posts/new" for 127.0.0.1 at 2022-01-29 16:27:56 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"new"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:8:in `show'
+Completed 404 Not Found in 23ms (ActiveRecord: 5.6ms | Allocations: 4813)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=new):
+  
+app/controllers/posts_controller.rb:8:in `show'
+Started GET "/users/1/posts/new" for 127.0.0.1 at 2022-01-29 16:28:59 +0100
+Processing by PostsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 15650)
+Completed 200 OK in 86ms (Views: 54.9ms | ActiveRecord: 8.3ms | Allocations: 21092)
+
+
+Started POST "/users/1/posts" for 127.0.0.1 at 2022-01-29 16:29:16 +0100
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "data"=>{"title"=>"hi", "text"=>"create a post"}, "commit"=>"Post", "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3:in `current_user'
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 3.2ms | Allocations: 12348)
+
+
+  
+NoMethodError (undefined method `update_post_counter' for #<Post:0x00007fbe3457c188>
+Did you mean?  updated_at_change):
+  
+app/controllers/posts_controller.rb:21:in `create'
+Started GET "/users/1/posts/new" for 127.0.0.1 at 2022-01-29 16:30:58 +0100
+Processing by PostsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 508)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 14568)
+Completed 200 OK in 83ms (Views: 54.2ms | ActiveRecord: 7.3ms | Allocations: 19910)
+
+
+Started POST "/users/1/posts" for 127.0.0.1 at 2022-01-29 16:31:09 +0100
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "data"=>{"title"=>"hi", "text"=>"post again "}, "commit"=>"Post", "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3:in `current_user'
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 5.5ms | Allocations: 8877)
+
+
+  
+NoMethodError (private method `update_posts_counter' called for #<Post:0x00007fbe414552c0>
+Did you mean?  updated_at_change):
+  
+app/controllers/posts_controller.rb:21:in `create'
+Started GET "/users/1/posts/new" for 127.0.0.1 at 2022-01-29 16:31:35 +0100
+Processing by PostsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 508)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 14565)
+Completed 200 OK in 82ms (Views: 39.9ms | ActiveRecord: 7.0ms | Allocations: 19952)
+
+
+Started POST "/users/1/posts" for 127.0.0.1 at 2022-01-29 16:31:42 +0100
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "data"=>{"title"=>"hi", "text"=>"hello"}, "commit"=>"Post", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `update_posts_counter'
+  [1m[36mUser Update All (130.8ms)[0m  [1m[33mUPDATE "users" SET "posts_counter" = COALESCE("posts_counter", 0) + $1 WHERE "users"."id" = $2[0m  [["posts_counter", 1], ["id", 1]]
+  ↳ app/models/post.rb:15:in `update_posts_counter'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:24:in `block (2 levels) in create'
+  [1m[36mPost Create (63.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "comments_counter", "likes_counter", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "hi"], ["text", "hello"], ["comments_counter", 0], ["likes_counter", 0], ["created_at", "2022-01-29 15:31:42.522470"], ["updated_at", "2022-01-29 15:31:42.522470"], ["user_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `block (2 levels) in create'
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:24:in `block (2 levels) in create'
+Redirected to http://127.0.0.1:3000/users/1/posts/
+Completed 302 Found in 390ms (ActiveRecord: 210.2ms | Allocations: 11399)
+
+
+Started GET "/users/1/posts/" for 127.0.0.1 at 2022-01-29 16:31:42 +0100
+Processing by PostsController#index as TURBO_STREAM
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/posts/index.html.erb:8
+  [1m[36mComment Load (71.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY created_at Desc LIMIT $2[0m  [["post_id", 1], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:17
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY created_at Desc LIMIT $2[0m  [["post_id", 4], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:17
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY created_at Desc LIMIT $2[0m  [["post_id", 5], ["LIMIT", 5]]
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 149.0ms | Allocations: 11553)
+  Rendered layout layouts/application.html.erb (Duration: 157.5ms | Allocations: 14471)
+Completed 200 OK in 162ms (Views: 77.4ms | ActiveRecord: 81.4ms | Allocations: 15855)
+
+
