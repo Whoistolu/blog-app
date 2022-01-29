@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :posts do
     resources :comments, only: [:create]
+    resources :likes, only: [:create]
   end
 end
