@@ -16,12 +16,12 @@
 
 Run:
 ````
-rails db:create
+rails s
 ````
 
 Run:
 ````
-rails db:migrate
+rspec
 ````
 
 

@@ -21,11 +21,19 @@
   flex-direction: column;
   border: 5px solid blue;
   width: 85%;
-  height: 240px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 38px;
   padding-right: 38px;
   border-radius: 8px;
   margin: 0 auto;
+}
+
+.comment-container {
+  width: 100%;
+}
+
+.comment-container > textarea {
+  width: 80%;
+  height: 85px;
 }
