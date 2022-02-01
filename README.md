@@ -6,7 +6,7 @@
 ## Milestone Image
 Sign Up   |  Log In
 :-------------------------:|:-------------------------:
-![SignUp](/home/whoistolu/Pictures/1.png) | ![LogIn](/home/whoistolu/Pictures/2.png)
+[SignUp](/home/whoistolu/Pictures/1.png) | [LogIn](/home/whoistolu/Pictures/2.png)
 
 ## Built With
 
