@@ -1,8 +1,4 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
-
-RSpec.describe Post, type: :model do
+require 'rails_helper'RSpec.describe Post, type: :model do
   describe 'Post Model' do
     subject { Post.create(title: 'Title test', text: 'text', user_id: 1) }
     before { subject.save }
