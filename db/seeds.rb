@@ -8,21 +8,21 @@
 
 
 
-user1 = User.create(name: "Ben", photo: "url", bio: "Hey my name is ben, I'm dev", posts_counter: 0)
-user2 = User.create(name: "Taliah", photo: "url", bio: "Hey my name is Taliah", posts_counter: 0)
-user3 = User.create(name: "Omar", photo: "url", bio: "Hey my name is Omar", posts_counter: 0)
-user4 = User.create(name: "Deen", photo: "url", bio: "Hey my name is Deen", posts_counter: 0)
+# user1 = User.create(name: "Ben", photo: "url", bio: "Hey my name is ben, I'm dev", posts_counter: 0)
+# user2 = User.create(name: "Taliah", photo: "url", bio: "Hey my name is Taliah", posts_counter: 0)
+# user3 = User.create(name: "Omar", photo: "url", bio: "Hey my name is Omar", posts_counter: 0)
+# user4 = User.create(name: "Deen", photo: "url", bio: "Hey my name is Deen", posts_counter: 0)
 
-post1 = Post.create(user_id: 1, title: 'Cats and Dogs', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
+# post1 = Post.create(user_id: 1, title: 'Cats and Dogs', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
 
-post2 = Post.create(user_id: 2, title: 'Cats and Dogs', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
+# post2 = Post.create(user_id: 2, title: 'Cats and Dogs', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
 
-post3 = Post.create(user_id: 2, title: 'Cats and Dogs 2', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
+# post3 = Post.create(user_id: 2, title: 'Cats and Dogs 2', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', comments_counter: 0, likes_counter: 0)
 
-comment1 = Comment.create(text: "great", user: user2, post:post1)
-comment2 = Comment.create(text: "hello", user: user2, post:post2)
+# comment1 = Comment.create(text: "great", user: user2, post:post1)
+# comment2 = Comment.create(text: "hello", user: user2, post:post2)
 
-Like.create(user_id: 1, post: post1)
+# Like.create(user_id: 1, post: post1)
 
 # user1.comments.create!(text: 'Wow', post: post1)
 # user1.comments.create!(text: 'Well Done 👏👏👏', post: post1)
