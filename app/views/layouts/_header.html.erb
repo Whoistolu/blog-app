@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Blog App", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "New post", new_post_path %></li>
+          <li><%= link_to "All posts", user_posts_path(current_user) %></li>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "logout"%></li>
+        <%end%>
+      </ul>
+    </nav>
+  </div>
+</header>
