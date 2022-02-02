@@ -2,6 +2,12 @@
 
 > The Blog app will be a classic example of a blog website. You will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
+
+## Milestone Image
+Sign Up   |  Log In
+:-------------------------:|:-------------------------:
+![SignUp](img/1.png) | ![LogIn](img/2.png)
+
 ## Built With
 
 - Ruby on Rails
@@ -16,22 +22,35 @@
 
 Run:
 ````
-rails s
+bundle install
 ````
 
 Run:
 ````
-rspec
+rails s
 ````
 
 
-👤 **Author**
+👤 **Author1**
 
-- Name: Ajise Toluwase
+- Name: **Ajise Toluwase**
 - GitHub: [@githubhandle](https://github.com/Whoistolu)
 - Twitter: [@twitterhandle](https://twitter.com/Littletolu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/toluwase-ajise-9b40411b2/)
 
+👤 **Author2**
+
+- Name:  **Moises Hernandez Coronado**
+- GitHub: [@Mhdez221993](https://github.com/Mhdez221993)
+- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
+- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
+
+
+👤 **Author3**
+
+:bearded_person: **Hector**
+  - GitHub: [@githubhandle](https://github.com/Hector096)
+  - Linkedin: [@linkedinhandle](https://www.linkedin.com/in/hector096/)
 
 ## 🤝 Contributing
 
