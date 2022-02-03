@@ -5,13 +5,13 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
-    @user = @post.user
-    @comments = @post.comments
+    @user = User.find(params[:user_id])
+    @post = @user.posts.includes(comments: [:user]).find(params[:id])
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.new
+    render :new, locals: { post: @post }
   end
 
   def create
@@ -34,5 +34,12 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:data).permit(:title, :text)
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy!
+    flash[:success] = 'You have deleted this post!'
+    redirect_to user_posts_url
   end
 end

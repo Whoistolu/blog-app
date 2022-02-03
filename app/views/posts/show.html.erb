@@ -6,11 +6,19 @@
         <%= form.submit "Like this post", class: "post-like-btns"%>
       <% end %>
       <h3>Comment <%= @post.comments_counter%>,  <span>Likes <%= @post.likes_counter%></span></h3>
+      <button>
+        <% if can? :destroy, @post %>
+          <%= link_to 'Delete Post', 
+            user_post_path(current_user.id), 
+            method: :delete, 
+            data: {confirm: 'Are You Sure You Want to Delete This Post'} %>
+        <% end %>
+      </button>
     </div>
   </div>
   <div>
     <div class="comments">
-    <% @comments.each do |comment| %>
+    <% @post.recent_5_comments.each do |comment| %>
        <h2><%= comment.user.name%>: <%= comment.text%></h2>
     <%end%>
   <%= render partial: "creation_of_comments", local: { post: @post } %>  
