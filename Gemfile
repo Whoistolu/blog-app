@@ -30,8 +30,6 @@ gem 'stimulus-rails'
 gem 'bootstrap-sass'
 gem 'jbuilder'
 gem 'rails-controller-testing'
-gem 'rspec', '~> 3.0'
-gem 'rspec-rails'
 
 gem 'devise'
 
@@ -60,6 +58,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'database_cleaner'
+  gem "rspec-rails"
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
 
