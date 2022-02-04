@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# _string_literal: true
 
 class AddUsersRefToPosts < ActiveRecord::Migration[7.0]
   def change

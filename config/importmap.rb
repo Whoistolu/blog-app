@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# _string_literal: true
 
 # Pin npm packages by running ./bin/importmap
 
