@@ -1,0 +1,6 @@
+ <%= form_with model: [ @post, @post.comments.build ] do |form| %>
+  <div class="comment-container">
+    <%= form.text_area :text, placeholder: "Type something here...", rows: 14, required: true %>
+    <%= form.submit "Comment", class: "submit-btn comment-btn" %>
+  </div>
+<% end %>
