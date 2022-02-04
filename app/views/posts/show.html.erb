@@ -7,7 +7,7 @@
     <h3>Comment <%= @post.comments_counter%>,  <span>Likes <%= @post.likes_counter%></span></h3>
     <% if can? :destroy, @post %>
       <%= button_to 'Delete Post',
-            user_post_path(current_user.id),
+            post_path,
             method: :delete,
             data: {confirm: 'Are You Sure You Want to Delete This Post'}, class: 'btn btn-danger'%>
     <% end %>
@@ -18,6 +18,6 @@
     <% @post.recent_5_comments.each do |comment| %>
       <h2><%= comment.user.name%>: <%= comment.text%></h2>
     <%end%>
-    <%= render partial: "creation_of_comments", local: { post: @post } %>
+    <%= render partial: "comments/comment" %>
   </div>
 </div>
