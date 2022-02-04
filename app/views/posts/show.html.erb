@@ -17,7 +17,11 @@
   <div class="comments">
     <% @post.recent_5_comments.each do |comment| %>
       <h2><%= comment.user.name%>: <%= comment.text%></h2>
-    <%end%>
-    <%= render partial: "comments/comment" %>
+      <%= link_to "Destroy", post_comment_path(commnet_id: comment.id,  post_id: @post.id), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+    <% end %>
+    <%= render "comments/comment" %>
   </div>
 </div>
