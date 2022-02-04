@@ -4,22 +4,18 @@ RSpec.describe 'Login', type: :system do
   describe 'login' do
     it 'shows the right content' do
       visit new_user_session_path
-      sleep(5)
       expect(page).to have_content('Log in')
-    end
-    it 'shows username input' do
-      visit new_user_session_path
-      sleep(5)
       expect(page).to have_content('Email')
-    end
-    it 'shows password input' do
-      visit new_user_session_path
-      sleep(5)
       expect(page).to have_content('Password')
     end
-    it 'shows submit button' do
+
+    it 'Fill email and password inputs' do
       visit new_user_session_path
-      sleep(5)
+      sleep(1)
+      fill_in 'Email', with: 'Moises'
+      fill_in 'Password', with: '123456'
+      sleep(1)
+      click_button 'submit'
       expect(page).to have_content('Log in')
     end
   end
