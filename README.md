@@ -4,9 +4,9 @@
 
 
 ## Milestone Image
-Sign Up   |  Log In
+Project Img1   |  Project Img2
 :-------------------------:|:-------------------------:
-![SignUp](img/1.png) | ![LogIn](img/2.png)
+![SignUp](img/3.png) | ![LogIn](img/4.png)
 
 ## Built With
 

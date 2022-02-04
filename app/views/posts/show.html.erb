@@ -21,7 +21,7 @@
         <%= link_to "Destroy", post_comment_path(commnet_id: comment.id,  post_id: @post.id), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
-                  } %>
+                  }, class: 'comment btn btn-danger' %>
       <%end%>
     <% end %>
     <%= render "comments/comment" %>
