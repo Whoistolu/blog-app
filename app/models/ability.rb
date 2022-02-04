@@ -1,7 +1,7 @@
 class Ability
   include CanCan::Ability
 
-    # Define abilities for the passed in user here. For example:
+  # Define abilities for the passed in user here. For example:
 
   def initialize(user)
     user ||= User.new # guest user (not logged in)
