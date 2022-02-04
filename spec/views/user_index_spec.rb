@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe 'Login', type: :system do
   describe 'User' do
     before(:each) do
-      @User1 = User.create! name: 'Chaw', password: '123456', email: 'chaw@gmail.com', confirmed_at: Time.now
+      @user1 = User.create! name: 'Chaw', password: '123456', email: 'chaw@gmail.com', confirmed_at: Time.now
       visit root_path
       fill_in 'Email', with: 'chaw@gmail.com'
       fill_in 'Password', with: '123456'
@@ -29,7 +29,7 @@ RSpec.describe 'Login', type: :system do
     it 'show users page when clicked' do
       expect(page).to have_content('Number of posts: 0')
       click_on 'Chaw'
-      expect(page).to have_current_path user_path(@User1)
+      expect(page).to have_current_path user_path(@user1)
     end
   end
 end
