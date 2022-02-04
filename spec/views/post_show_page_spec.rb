@@ -15,9 +15,9 @@ RSpec.describe 'Login', type: :system do
       @post1 = @user1.posts.create!(title: 'To Be',
                                     text: 'The big question is: "To be or not to be a Ruby programmer"')
       @post2 = @user1.posts.create!(title: 'Hello',
-                                    text: 'Why people say HTML is not a programming language...",  likes_counters: 0, comments_counter: 0')
+                                    text: 'Why people say HTML is not a programming language..."')
       @post3 = @user1.posts.create!(title: 'Hey',
-                                    text: 'With the clif hanger seen in the first half of season 4, do you think...",  likes_counters: 0, comments_counter: 0')
+                                    text: 'With the clif hanger seen in the first half of season 4, do you think..."')
 
       visit user_path(@user1.id)
     end
