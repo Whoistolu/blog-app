@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Login', type: :system do
@@ -10,7 +12,7 @@ RSpec.describe 'Login', type: :system do
       click_button 'Log in'
       visit root_path
     end
-    
+
     it 'shows the username' do
       expect(page).to have_content('Chaw')
     end
@@ -20,7 +22,6 @@ RSpec.describe 'Login', type: :system do
       expect(image.size).to eql(1)
     end
 
-    
     it 'shows number of posts for each user' do
       expect(page).to have_content('Number of posts: 0')
     end
@@ -31,4 +32,4 @@ RSpec.describe 'Login', type: :system do
       expect(page).to have_current_path user_path(@User1)
     end
   end
-end 
+end

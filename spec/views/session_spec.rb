@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Login', type: :system do
@@ -46,4 +48,4 @@ RSpec.describe 'Login', type: :system do
       expect(page).to have_current_path root_path
     end
   end
-end 
+end
