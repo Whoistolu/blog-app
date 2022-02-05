@@ -4,7 +4,7 @@ class Like < ApplicationRecord
   belongs_to :user
   belongs_to :post
 
-  # after_save :update_comments_counter
+  after_save :update_likes_counter
 
   # private
 
