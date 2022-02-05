@@ -51,5 +51,10 @@ RSpec.describe 'Login', type: :feature do
       expect(page).to have_current_path user_posts_path(@user1)
     end
 
+    it 'When I click to see all posts, it redirects me to the user\'s post\'s show page.' do
+      click_link 'To Be'
+      expect(page).to have_current_path user_post_path(@user1, @post1)
+    end
+
   end
 end
