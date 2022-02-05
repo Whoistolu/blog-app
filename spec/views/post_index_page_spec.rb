@@ -22,7 +22,7 @@ RSpec.describe 'Login', type: :feature do
       @comment1 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
       @comment2 = @post1.comments.create!(text: 'This is the second comment', user_id: @user1.id)
       @comment3 = @post1.comments.create!(text: 'This is the third comment', user_id: @user1.id)
-      @like1 = @post1.likes.create!(user_id: @user1.id)                      
+      @like1 = @post1.likes.create!(user_id: @user1.id)                 
 
       visit user_posts_path(@user1)
     end
