@@ -32,7 +32,7 @@ RSpec.describe 'Login', type: :feature do
     end
 
     it 'shows number of posts by user' do
-      expect(page).to have_content('Number of posts: 0')
+      expect(page).to have_content('Number of posts: 3')
     end
 
     it 'shows posts title' do
