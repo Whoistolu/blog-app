@@ -46,7 +46,11 @@ RSpec.describe 'Login', type: :feature do
       expect(page).to have_content 'With the clif hanger seen in the first half of season 4, do you think...'
     end
 
-    it 'When I click to see all posts, it redirects me to the user\'s post\'s index page.' do
+    it 'Can see a button that lets me view all of a users posts' do
+      expect(page).to have_content('See all post')
+    end
+
+    it 'When I click to see all posts, it redirects me to the users posts index page.' do
       click_link 'See all posts'
       expect(page).to have_current_path user_posts_path(@user1)
     end
@@ -55,6 +59,5 @@ RSpec.describe 'Login', type: :feature do
       click_link 'To Be'
       expect(page).to have_current_path user_post_path(@user1, @post1)
     end
-
   end
 end
