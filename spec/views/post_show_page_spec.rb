@@ -19,6 +19,10 @@ RSpec.describe 'Login', type: :feature do
       @post3 = @user1.posts.create!(title: 'Hey',
                                     text: 'With the clif hanger seen in the first half of season 4, do you think..."')
 
+      @comment1 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
+      @comment2 = @post2.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
+      @comment3 = @post3.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
+
       visit user_path(@user1.id)
     end
 
@@ -32,7 +36,7 @@ RSpec.describe 'Login', type: :feature do
     end
 
     it 'shows number of comments' do
-      expect(page).to have_content('Number of posts: 0')
+      expect(page).to have_content('Number of posts: 3')
     end
 
     it 'can see the post\'s body.' do
