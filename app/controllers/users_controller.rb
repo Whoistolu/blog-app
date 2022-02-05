@@ -17,15 +17,7 @@ class UsersController < ApplicationController
 
   private
 
-  # def item_params
-  #   params.permit(:name, :done)
-  # end
-
   def set_user
     @user = User.find(params[:id])
   end
-
-  # def set_todo_item
-  #   @item = @todo.items.find_by!(id: params[:id]) if @todo
-  # end
 end
