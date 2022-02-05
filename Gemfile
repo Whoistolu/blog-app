@@ -4,9 +4,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
+gem 'coffee-rails'
 gem 'sass-rails'
 gem 'uglifier'
-gem 'coffee-rails'
 
 gem 'devise-jwt'
 gem 'rack-cors'
