@@ -31,7 +31,9 @@ RSpec.describe 'Login', type: :feature do
       expect(page).to have_content('Chaw')
     end
 
-  
+    it 'shows number of posts for each user' do
+      expect(page).to have_content('Number of posts: 3')
+    end
 
     it 'shows the users bio' do
       expect(page).to have_content('Lorem ipsum dolor sit amet')
