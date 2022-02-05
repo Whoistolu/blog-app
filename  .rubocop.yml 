@@ -38,7 +38,7 @@ Style/AndOr:
   Enabled: false
 Style/DefWithParentheses:
   Enabled: false
-Style/FrozenStringLiteralComment:
+Style/StringLiteralComment:
   EnforcedStyle: never
 
 Layout/HashAlignment:
