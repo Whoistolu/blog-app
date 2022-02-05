@@ -1,4 +1,7 @@
-  <div class="user_container">
+<div class="user_container">
+  <div class="user_img">
+    <%= image_tag("image1.jpg", width:'100vw') %>
+  </div>
   <div class="user_data">
     <h2><%= @user.name%></h2>
     <p>Number of posts: <%= @user.posts_counter %></p>
