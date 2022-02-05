@@ -22,8 +22,9 @@ RSpec.describe 'Login', type: :feature do
                                     text: 'With the clif hanger seen in the first half of season 4, do you think..."')
 
       @comment1 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
-      @comment2 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user2.id)
-      @comment3 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user2.id)
+      @comment2 = @post1.comments.create!(text: 'This is the second comment', user_id: @user2.id)
+      @comment3 = @post1.comments.create!(text: 'This is the third comment', user_id: @user2.id)
+      @like1 = @post1.likes.create!(user_id: @user2.id)
 
       visit user_post_path(@user1, @post1)
     end
@@ -37,7 +38,11 @@ RSpec.describe 'Login', type: :feature do
     end
 
     it 'shows number of comments' do
-      expect(page).to have_content('Number of comments: 1')
+      expect(page).to have_content('Comment 3')
+    end
+
+    it 'shows number of likes' do
+      expect(page).to have_content('Likes 1')
     end
 
     it 'can see the post\'s body.' do
@@ -48,8 +53,8 @@ RSpec.describe 'Login', type: :feature do
       expect(page).to have_content 'Brian'
     end
 
-    # it 'can see the comment each commentor left.' do
-    #   expect(page).to have_content 'Hello'
-    # end
+    it 'can see the comments of each commentor.' do
+      expect(page).to have_content 'This is the second comment'
+    end
   end
 end
