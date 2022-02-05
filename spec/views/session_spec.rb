@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Login', type: :system do
+RSpec.describe 'Login', type: :feature do
   describe 'login' do
     before(:each) do
       User.create! name: 'chaw', password: '123456', email: 'chaw@gmail.com', confirmed_at: Time.now
