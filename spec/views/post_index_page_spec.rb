@@ -18,12 +18,11 @@ RSpec.describe 'Login', type: :feature do
                                     text: 'Why people say HTML is not a programming language..."')
       @post3 = @user1.posts.create!(title: 'Hey',
                                     text: 'With the clif hanger seen in the first half of season 4, do you think..."')
-      
+
       @comment1 = @post1.comments.create!(text: 'This is the first comment for the first post', user_id: @user1.id)
       @comment2 = @post1.comments.create!(text: 'This is the second comment', user_id: @user1.id)
       @comment3 = @post1.comments.create!(text: 'This is the third comment', user_id: @user1.id)
-      @like1 = @post1.likes.create!(user_id: @user1.id)
-                              
+      @like1 = @post1.likes.create!(user_id: @user1.id)                      
 
       visit user_posts_path(@user1)
     end
