@@ -19,7 +19,7 @@ RSpec.describe 'Login', type: :feature do
       @post3 = @user1.posts.create!(title: 'Hey',
                                     text: 'With the clif hanger seen in the first half of season 4, do you think..."')
 
-      visit user_path(@user1.id)
+      visit user_posts_path(@user1)
     end
 
     it 'shows user photo' do
@@ -57,7 +57,7 @@ RSpec.describe 'Login', type: :feature do
     end
 
     it 'can see a section for pagination if there are more posts than fit on the view.' do
-      expect(page).to have_content 'With the clif hanger seen in the first half of season 4, do you think...'
+      expect(page).to have_content 'Pagination'
     end
 
     it 'When I click on a post, it redirects me to that post\'s show page.' do
